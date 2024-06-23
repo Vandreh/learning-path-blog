@@ -1,0 +1,1 @@
+Refatore utilizando conceitos como SOLID, Clean Code, DRY, KISS e caso seja possível aplique um ou mais designer patterns adequados visando escalabilidade e  performance, criando uma estrutura de pastas organizadas e separando por arquivos

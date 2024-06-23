@@ -1,0 +1,8 @@
+<%= render partial: 'form', locals: { blog_post: @blog_post, titulo: "Edit Post" } %>
+<%
+=begin%>
+ <%= render 'form', titulo: "Edit Post" %> 
+<%= button_to "Delete", @blog_post, method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %>
+<%
+=end%>
+<%= button_to "Delete", blog_post_path, method: :delete, class: "delete-button", onclick: "return confirm('Are you sure?');" %>

@@ -1,0 +1,10 @@
+<%= link_to root_path do %>
+  <h1>My Blog Post</h1>
+<% end %>
+<div>
+
+  <h2><%= @blog_post.title %></h2>
+  <p><%= @blog_post.body %></p>
+</div>
+
+<%= link_to "Edit", edit_blog_post_path if user_signed_in? %>

@@ -1,0 +1,79 @@
+Aula 05:
+  Build a Blog with Rails Part 5: Adding a Blog Post Show Action
+  https://www.youtube.com/watch?v=xI9sBtjSI7A&list=PLm8ctt9NhMNWD939gE728i13W999EFS0n&index=6
+
+rails new blog
+rails generate model BlogPost title:string body:text
+
+<%= logger.info(blog_post) %>
+BlogPost.model_name
+
+
+
+Aula 07:
+  Build a Blog with Rails Part 7: Adding a Create Blog Post Action
+  https://www.youtube.com/watch?v=XsOnLCBb4Ew&list=PLm8ctt9NhMNWD939gE728i13W999EFS0n&index=8
+
+
+
+Aula 09:
+  Build a Blog with Rails Part 9: Adding A Blog Post Destroy Action and Refactoring
+  https://www.youtube.com/watch?v=nHQc4ONqfJc&list=PLm8ctt9NhMNWD939gE728i13W999EFS0n&index=10
+
+
+
+Aula 10:
+  Build a Blog with Rails Part 10: Authentication with Devise
+  https://www.youtube.com/watch?v=dTpyInyvQ2Y&list=PLm8ctt9NhMNWD939gE728i13W999EFS0n&index=11
+
+bundle add devise
+  https://rubygems.org/gems/devise/versions/4.2.0?locale=en
+
+
+rails g devise:install
+rails g devise User
+
+rails db:migrate
+
+
+
+
+to User signin:
+  http://localhost:3000/users/sign_in
+
+rails c
+  User.last.destroy
+
+rails db:seeds
+
+
+
+
+Aula 11:
+  Build a Blog with Rails Part 11: Adding TailwindCSS to Rails
+  https://www.youtube.com/watch?v=GGpt2TEkDqo&list=PLm8ctt9NhMNWD939gE728i13W999EFS0n&index=12
+
+
+
+CSS:
+  https://github.com/rails/tailwindcss-rails
+  
+  bundle add tailwindcss-rails
+  rails tailwindcss:install
+
+
+
+start server:
+  bin/dev
+
+rails g devise:views
+
+
+
+
+
+
+
+
+
+
